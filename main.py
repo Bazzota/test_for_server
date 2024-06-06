@@ -1,8 +1,13 @@
 import asyncio
+import logging.config
 
 from aiogram import Bot, Dispatcher
 
 from config import bot_config
+from config import logging_config
+
+
+logging.config.dictConfig(logging_config.logging_config)
 
 
 async def main():
