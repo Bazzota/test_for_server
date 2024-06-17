@@ -24,12 +24,24 @@ logging_config = {
             'class': 'logging.StreamHandler',
             'formatter': 'formatter_1',
             'stream': sys.stdout
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'file_log.log',
+            'mode': 'w',
+            'level': 'INFO',
+            'formatter': 'formatter_1'
         }
     },
-    'loggers': {},
+    'loggers': {
+        'handlers.py': {
+            'level': 'INFO',
+            'handlers': ['handler_stderr']
+        }
+    },
     'root': {
         'level': 'INFO',
         'formatter': 'default',
-        'handlers': ['default']
+        'handlers': ['default', 'file']
     }
 }

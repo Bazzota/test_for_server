@@ -1,0 +1,5 @@
+#INFO     aiogram.dispatcher:start_polling - Start polling
+#INFO     aiogram.dispatcher:_polling - Run polling for bot @bass_train1_bot id=6856052160 - 'Game_bot'
+#WARNING  aiogram.dispatcher:_signal_stop_polling - Received SIGINT signal
+#INFO     aiogram.dispatcher:_polling - Polling stopped for bot @bass_train1_bot id=6856052160 - 'Game_bot'
+#INFO     aiogram.dispatcher:start_polling - Polling stopped
